@@ -1,0 +1,6 @@
+sqlx database setup --database-url mysql://root:password@127.0.0.1:3306/clip
+
+
+DATABASE_URL=mysql://root:password@127.0.0.1:3306/clip sqlx migrate add clips
+
+DATABASE_URL=mysql://root:password@127.0.0.1:3306/clip sqlx migrate run
